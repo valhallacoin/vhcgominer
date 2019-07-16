@@ -21,7 +21,7 @@ import (
 )
 
 const (
-	defaultConfigFilename = "gominer.conf"
+	defaultConfigFilename = "vhcgominer.conf"
 	defaultLogLevel       = "info"
 	defaultLogDirname     = "logs"
 	defaultLogFilename    = "gominer.log"
