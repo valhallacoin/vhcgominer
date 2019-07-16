@@ -9,8 +9,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/valhallacoin/gominer/cl"
-	"github.com/valhallacoin/gominer/work"
+	"github.com/valhallacoin/vhcgominer/cl"
+	"github.com/valhallacoin/vhcgominer/work"
 )
 
 // getKernelExecutionTime returns the kernel execution time for a device.

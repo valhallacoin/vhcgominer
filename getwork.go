@@ -19,9 +19,9 @@ import (
 
 	"github.com/btcsuite/go-socks/socks"
 
-	"github.com/valhallacoin/gominer/stratum"
-	"github.com/valhallacoin/gominer/util"
-	"github.com/valhallacoin/gominer/work"
+	"github.com/valhallacoin/vhcgominer/stratum"
+	"github.com/valhallacoin/vhcgominer/util"
+	"github.com/valhallacoin/vhcgominer/work"
 )
 
 // newHTTPClient returns a new HTTP client that is configured according to the

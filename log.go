@@ -5,9 +5,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/valhallacoin/gominer/stratum"
 	"github.com/decred/slog"
 	"github.com/jrick/logrotate/rotator"
+	"github.com/valhallacoin/vhcgominer/stratum"
 )
 
 // logWriter implements an io.Writer that outputs to both standard output and

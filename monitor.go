@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/valhallacoin/gominer/util"
+	"github.com/valhallacoin/vhcgominer/util"
 )
 
 type MinerStatus struct {

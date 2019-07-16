@@ -12,9 +12,9 @@ import (
 	"github.com/valhallacoin/vhcd/chaincfg"
 	"github.com/valhallacoin/vhcd/chaincfg/chainhash"
 
-	"github.com/valhallacoin/gominer/blake256"
-	"github.com/valhallacoin/gominer/util"
-	"github.com/valhallacoin/gominer/work"
+	"github.com/valhallacoin/vhcgominer/blake256"
+	"github.com/valhallacoin/vhcgominer/util"
+	"github.com/valhallacoin/vhcgominer/work"
 )
 
 var chainParams = &chaincfg.MainNetParams

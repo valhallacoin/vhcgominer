@@ -21,9 +21,9 @@ import (
 
 	"github.com/barnex/cuda5/cu"
 
-	"github.com/valhallacoin/gominer/nvml"
-	"github.com/valhallacoin/gominer/util"
-	"github.com/valhallacoin/gominer/work"
+	"github.com/valhallacoin/vhcgominer/nvml"
+	"github.com/valhallacoin/vhcgominer/util"
+	"github.com/valhallacoin/vhcgominer/work"
 )
 
 const (

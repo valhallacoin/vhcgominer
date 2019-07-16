@@ -15,9 +15,9 @@ import (
 	"time"
 
 	"github.com/btcsuite/go-flags"
+	"github.com/decred/slog"
 	"github.com/valhallacoin/vhcd/chaincfg"
 	"github.com/valhallacoin/vhcd/vhcutil"
-	"github.com/decred/slog"
 )
 
 const (
@@ -583,7 +583,7 @@ func loadConfig() (*config, []string, error) {
 	switch {
 	case cfg.TestNet:
 		defaultRPCPort = defaultRPCPortTestNet
-		chainParams = &chaincfg.TestNet3Params
+		chainParams = &chaincfg.TestNetParams
 	case cfg.SimNet:
 		defaultRPCPort = defaultRPCPortSimNet
 		chainParams = &chaincfg.SimNetParams

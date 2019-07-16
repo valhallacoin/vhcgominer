@@ -29,8 +29,8 @@ import (
 	"github.com/valhallacoin/vhcd/chaincfg/chainhash"
 	"github.com/valhallacoin/vhcd/wire"
 
-	"github.com/valhallacoin/gominer/util"
-	"github.com/valhallacoin/gominer/work"
+	"github.com/valhallacoin/vhcgominer/util"
+	"github.com/valhallacoin/vhcgominer/work"
 )
 
 var chainParams = &chaincfg.MainNetParams

@@ -20,9 +20,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/valhallacoin/gominer/cl"
-	"github.com/valhallacoin/gominer/util"
-	"github.com/valhallacoin/gominer/work"
+	"github.com/valhallacoin/vhcgominer/cl"
+	"github.com/valhallacoin/vhcgominer/util"
+	"github.com/valhallacoin/vhcgominer/work"
 )
 
 // Return the GPU library in use.

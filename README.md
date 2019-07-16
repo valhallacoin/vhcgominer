@@ -98,8 +98,8 @@ well.
 To download and build gominer, run:
 
 ```
-go get github.com/valhallacoin/gominer
-cd $GOPATH/src/github.com/valhallacoin/gominer
+go get github.com/valhallacoin/vhcgominer
+cd $GOPATH/src/github.com/valhallacoin/vhcgominer
 cd gominer
 
 env GO111MODULE=on go build
@@ -134,13 +134,13 @@ go build -tags opencladl
   * This should have been done by the Go installer
 - Add the following locations to your PATH: `C:\Users\username\go\bin;C:\Go\bin`
 - Add `C:\Program Files\mingw-w64\x84_64-6.2.0-posix-seh-rt_v5-rev1\mingw64\bin` to your PATH (This is the latest release as of 2016-09-29)
-- `go get github.com/valhallacoin/gominer`
+- `go get github.com/valhallacoin/vhcgominer`
   * Compilation will most likely fail which can be safely ignored for now.
 - Change to the gominer directory
   * If using the Windows Command Prompt:
-  ```cd %GOPATH%/src/github.com/valhallacoin/gominer```
+  ```cd %GOPATH%/src/github.com/valhallacoin/vhcgominer```
   * If using git-bash
-  ```cd $GOPATH/src/github.com/valhallacoin/gominer```
+  ```cd $GOPATH/src/github.com/valhallacoin/vhcgominer```
 
 #### Build Instructions
 
@@ -155,7 +155,7 @@ go build -tags opencladl
 
 ###### Steps
 - Using git-bash:
-  * ```cd $GOPATH/src/github.com/valhallacoin/gominer```
+  * ```cd $GOPATH/src/github.com/valhallacoin/vhcgominer```
   * ```mingw32-make.exe```
 - Copy dependencies:
   * ```copy obj/valhallacoin.dll .```
