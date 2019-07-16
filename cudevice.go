@@ -5,7 +5,7 @@
 package main
 
 /*
-#include "decred.h"
+#include "valhallacoin.h"
 */
 import "C"
 
@@ -21,9 +21,9 @@ import (
 
 	"github.com/barnex/cuda5/cu"
 
-	"github.com/decred/gominer/nvml"
-	"github.com/decred/gominer/util"
-	"github.com/decred/gominer/work"
+	"github.com/valhallacoin/gominer/nvml"
+	"github.com/valhallacoin/gominer/util"
+	"github.com/valhallacoin/gominer/work"
 )
 
 const (
@@ -91,15 +91,15 @@ type Device struct {
 	quit chan struct{}
 }
 
-func decredCPUSetBlock52(input *[192]byte) {
+func valhallacoinCPUSetBlock52(input *[192]byte) {
 	if input == nil {
 		panic("input is nil")
 	}
-	C.decred_cpu_setBlock_52((*C.uint32_t)(unsafe.Pointer(input)))
+	C.valhallacoin_cpu_setBlock_52((*C.uint32_t)(unsafe.Pointer(input)))
 }
 
-func decredHashNonce(gridx, blockx, threads uint32, startNonce uint32, nonceResults cu.DevicePtr, targetHigh uint32) {
-	C.decred_hash_nonce(C.uint32_t(gridx), C.uint32_t(blockx), C.uint32_t(threads),
+func valhallacoinHashNonce(gridx, blockx, threads uint32, startNonce uint32, nonceResults cu.DevicePtr, targetHigh uint32) {
+	C.valhallacoin_hash_nonce(C.uint32_t(gridx), C.uint32_t(blockx), C.uint32_t(threads),
 		C.uint32_t(startNonce), (*C.uint32_t)(unsafe.Pointer(nonceResults)), C.uint32_t(targetHigh))
 }
 
@@ -326,7 +326,7 @@ func (d *Device) runDevice() error {
 			i += 4
 			j++
 		}
-		decredCPUSetBlock52(endianData)
+		valhallacoinCPUSetBlock52(endianData)
 
 		// Update the timestamp. Only solo work allows you to roll
 		// the timestamp.
@@ -353,7 +353,7 @@ func (d *Device) runDevice() error {
 
 		targetHigh := ^uint32(0)
 
-		decredHashNonce(gridx, blockx, throughput, startNonce, nonceResultsD, targetHigh)
+		valhallacoinHashNonce(gridx, blockx, throughput, startNonce, nonceResultsD, targetHigh)
 
 		cu.MemcpyDtoH(nonceResultsH, nonceResultsD, d.cuInSize)
 

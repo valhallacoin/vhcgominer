@@ -20,9 +20,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/decred/gominer/cl"
-	"github.com/decred/gominer/util"
-	"github.com/decred/gominer/work"
+	"github.com/valhallacoin/gominer/cl"
+	"github.com/valhallacoin/gominer/util"
+	"github.com/valhallacoin/gominer/work"
 )
 
 // Return the GPU library in use.

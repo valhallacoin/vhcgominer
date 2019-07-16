@@ -1,14 +1,14 @@
 # gominer
 
 gominer is an application for performing Proof-of-Work (PoW) mining on the
-Decred network.  It supports solo and stratum/pool mining using CUDA and
+Valhalla network.  It supports solo and stratum/pool mining using CUDA and
 OpenCL devices.
 
 ## Downloading
 
 Linux and Windows 64-bit binaries may be downloaded from:
 
-[https://github.com/decred/decred-binaries/releases/latest](https://github.com/decred/decred-binaries/releases/latest)
+[https://github.com/valhallacoin/valhallacoin-binaries/releases/latest](https://github.com/valhallacoin/valhallacoin-binaries/releases/latest)
 
 ## Running
 
@@ -18,7 +18,7 @@ Benchmark mode:
 gominer -B
 ```
 
-Solo mining on mainnet using dcrd running on the local host:
+Solo mining on mainnet using vhcd running on the local host:
 
 ```
 gominer -u myusername -P hunter2
@@ -98,8 +98,8 @@ well.
 To download and build gominer, run:
 
 ```
-go get github.com/decred/gominer
-cd $GOPATH/src/github.com/decred/gominer
+go get github.com/valhallacoin/gominer
+cd $GOPATH/src/github.com/valhallacoin/gominer
 cd gominer
 
 env GO111MODULE=on go build
@@ -134,13 +134,13 @@ go build -tags opencladl
   * This should have been done by the Go installer
 - Add the following locations to your PATH: `C:\Users\username\go\bin;C:\Go\bin`
 - Add `C:\Program Files\mingw-w64\x84_64-6.2.0-posix-seh-rt_v5-rev1\mingw64\bin` to your PATH (This is the latest release as of 2016-09-29)
-- `go get github.com/decred/gominer`
+- `go get github.com/valhallacoin/gominer`
   * Compilation will most likely fail which can be safely ignored for now.
 - Change to the gominer directory
   * If using the Windows Command Prompt:
-  ```cd %GOPATH%/src/github.com/decred/gominer```
+  ```cd %GOPATH%/src/github.com/valhallacoin/gominer```
   * If using git-bash
-  ```cd $GOPATH/src/github.com/decred/gominer```
+  ```cd $GOPATH/src/github.com/valhallacoin/gominer```
 
 #### Build Instructions
 
@@ -155,10 +155,10 @@ go build -tags opencladl
 
 ###### Steps
 - Using git-bash:
-  * ```cd $GOPATH/src/github.com/decred/gominer```
+  * ```cd $GOPATH/src/github.com/valhallacoin/gominer```
   * ```mingw32-make.exe```
 - Copy dependencies:
-  * ```copy obj/decred.dll .```
+  * ```copy obj/valhallacoin.dll .```
   * ```copy nvidia/NVSMI/nvml.dll .```
 
 ##### OpenCL/ADL

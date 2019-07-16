@@ -8,13 +8,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
+	"github.com/valhallacoin/vhcd/blockchain"
+	"github.com/valhallacoin/vhcd/chaincfg"
+	"github.com/valhallacoin/vhcd/chaincfg/chainhash"
 
-	"github.com/decred/gominer/blake256"
-	"github.com/decred/gominer/util"
-	"github.com/decred/gominer/work"
+	"github.com/valhallacoin/gominer/blake256"
+	"github.com/valhallacoin/gominer/util"
+	"github.com/valhallacoin/gominer/work"
 )
 
 var chainParams = &chaincfg.MainNetParams

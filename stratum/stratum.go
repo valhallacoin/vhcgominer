@@ -25,12 +25,12 @@ import (
 
 	"github.com/btcsuite/go-socks/socks"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/wire"
+	"github.com/valhallacoin/vhcd/chaincfg"
+	"github.com/valhallacoin/vhcd/chaincfg/chainhash"
+	"github.com/valhallacoin/vhcd/wire"
 
-	"github.com/decred/gominer/util"
-	"github.com/decred/gominer/work"
+	"github.com/valhallacoin/gominer/util"
+	"github.com/valhallacoin/gominer/work"
 )
 
 var chainParams = &chaincfg.MainNetParams
@@ -379,7 +379,7 @@ func (s *Stratum) handleStratumMsg(resp interface{}) {
 		msg := StratumMsg{
 			Method: nResp.Method,
 			ID:     nResp.ID,
-			Params: []string{"decred-gominer/" + s.cfg.Version},
+			Params: []string{"valhallacoin-gominer/" + s.cfg.Version},
 		}
 		m, err := json.Marshal(msg)
 		if err != nil {
@@ -473,7 +473,7 @@ func (s *Stratum) Subscribe() error {
 	msg := StratumMsg{
 		Method: "mining.subscribe",
 		ID:     s.ID,
-		Params: []string{"decred-gominer/" + s.cfg.Version},
+		Params: []string{"valhallacoin-gominer/" + s.cfg.Version},
 	}
 	s.subID = msg.ID.(uint64)
 	s.ID++
@@ -622,7 +622,7 @@ func (s *Stratum) Unmarshal(blob []byte) (interface{}, error) {
 					// in here so we will ignore it (we
 					// already have the default value of 1
 					// anyway and pool can send a new one.
-					// dcr.coinmine.pl puts something that
+					// vhc.coinmine.pl puts something that
 					// is not a difficulty here which is why
 					// we ignore.
 				}

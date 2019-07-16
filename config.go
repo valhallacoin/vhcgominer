@@ -15,8 +15,8 @@ import (
 	"time"
 
 	"github.com/btcsuite/go-flags"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/dcrutil"
+	"github.com/valhallacoin/vhcd/chaincfg"
+	"github.com/valhallacoin/vhcd/vhcutil"
 	"github.com/decred/slog"
 )
 
@@ -29,11 +29,11 @@ const (
 )
 
 var (
-	minerHomeDir          = dcrutil.AppDataDir("gominer", false)
-	dcrdHomeDir           = dcrutil.AppDataDir("dcrd", false)
+	minerHomeDir          = vhcutil.AppDataDir("gominer", false)
+	vhcdHomeDir           = vhcutil.AppDataDir("vhcd", false)
 	defaultConfigFile     = filepath.Join(minerHomeDir, defaultConfigFilename)
 	defaultRPCServer      = "localhost"
-	defaultRPCCertFile    = filepath.Join(dcrdHomeDir, "rpc.cert")
+	defaultRPCCertFile    = filepath.Join(vhcdHomeDir, "rpc.cert")
 	defaultRPCPortMainNet = "9109"
 	defaultRPCPortTestNet = "19109"
 	defaultRPCPortSimNet  = "19556"

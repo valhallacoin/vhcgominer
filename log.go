@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/decred/gominer/stratum"
+	"github.com/valhallacoin/gominer/stratum"
 	"github.com/decred/slog"
 	"github.com/jrick/logrotate/rotator"
 )
