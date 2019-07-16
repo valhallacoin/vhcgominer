@@ -78,6 +78,8 @@ __kernel void search(
 	const uint cstE = 0x3F84D5B5UL;
 	const uint cstF = 0xB5470917UL;
 
+	const uint magic = 0xA1F66C20UL;
+
 	uint V0, V1, V2, V3, V4, V5, V6, V7;
 	uint V8, V9, VA, VB, VC, VD, VE, VF;
 	uint pre7;
@@ -154,7 +156,7 @@ __kernel void search(
 	*/
 
         // Push this share.
-	if (pre7 ^ V7 ^ VF) return;
+	if (pre7 ^ V7 ^ VF ^ magic) return;
         
 	// Update nonce.
 	output[++output[0]] = M3;

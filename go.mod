@@ -7,5 +7,5 @@ require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/decred/slog v1.0.0
 	github.com/jrick/logrotate v1.0.0
-	github.com/valhallacoin/vhcd v0.0.0-20190715225009-4bf884029e06
+	github.com/valhallacoin/vhcd v0.0.0-20190716150956-0620fabc71e3
 )
