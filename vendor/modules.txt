@@ -1,0 +1,40 @@
+# github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412
+github.com/agl/ed25519
+github.com/agl/ed25519/edwards25519
+# github.com/barnex/cuda5 v0.0.0-20171012184954-da30a9b287d8
+github.com/barnex/cuda5/cu
+# github.com/btcsuite/go-flags v0.0.0-20150116065318-6c288d648c1c
+github.com/btcsuite/go-flags
+# github.com/btcsuite/go-socks v0.0.0-20170105172521-4720035b7bfd
+github.com/btcsuite/go-socks/socks
+# github.com/davecgh/go-spew v1.1.1
+github.com/davecgh/go-spew/spew
+# github.com/dchest/blake256 v1.0.0
+github.com/dchest/blake256
+# github.com/decred/base58 v1.0.0
+github.com/decred/base58
+# github.com/decred/slog v1.0.0
+github.com/decred/slog
+# github.com/jrick/logrotate v1.0.0
+github.com/jrick/logrotate/rotator
+# github.com/valhallacoin/vhcd v0.0.0-20190715225009-4bf884029e06
+github.com/valhallacoin/vhcd/blockchain
+github.com/valhallacoin/vhcd/chaincfg
+github.com/valhallacoin/vhcd/chaincfg/chainhash
+github.com/valhallacoin/vhcd/vhcutil
+github.com/valhallacoin/vhcd/wire
+github.com/valhallacoin/vhcd/blockchain/internal/dbnamespace
+github.com/valhallacoin/vhcd/blockchain/internal/progresslog
+github.com/valhallacoin/vhcd/blockchain/stake
+github.com/valhallacoin/vhcd/database
+github.com/valhallacoin/vhcd/txscript
+github.com/valhallacoin/vhcd/vhcec/secp256k1
+github.com/valhallacoin/vhcd/chaincfg/chainec
+github.com/valhallacoin/vhcd/vhcec
+github.com/valhallacoin/vhcd/vhcec/edwards
+github.com/valhallacoin/vhcd/vhcec/secp256k1/schnorr
+github.com/valhallacoin/vhcd/blockchain/stake/internal/dbnamespace
+github.com/valhallacoin/vhcd/blockchain/stake/internal/ticketdb
+github.com/valhallacoin/vhcd/blockchain/stake/internal/tickettreap
+# golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
+golang.org/x/crypto/ripemd160
