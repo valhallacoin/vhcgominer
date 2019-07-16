@@ -29,7 +29,7 @@ const (
 )
 
 var (
-	minerHomeDir          = vhcutil.AppDataDir("gominer", false)
+	minerHomeDir          = vhcutil.AppDataDir("vhcgominer", false)
 	vhcdHomeDir           = vhcutil.AppDataDir("vhcd", false)
 	defaultConfigFile     = filepath.Join(minerHomeDir, defaultConfigFilename)
 	defaultRPCServer      = "localhost"
